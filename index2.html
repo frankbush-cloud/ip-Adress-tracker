@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP APP</title>
+    <!-- jquery -->
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="crossorigin=""/>
+     <!-- leaflet js link -->
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="crossorigin=""></script>
+     <!-- leaflet-js -->
+</head>
+<body>
+    <div class="app-container">
+        <div class="form-container">
+            <h1 class="title">Ip Address Tracker</h1>
+            <form class="form-elemnt">
+                <input type="text" id="ip-adress" class="form-control" placeholder="Search for any ip adress">
+                <div id="search-btn" class="btn btn-dark">
+                    <img src="./images/icon-arrow.svg" alt="" width="12px" height="12px">
+                </div>
+            </form>
+        </div>
+        <div class="results-display">
+            <div class="display-container">
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">IP address</h4>
+                    <span id="current-ip" class="results">105.160.103.169</span>
+                </div>
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">location</h4>
+                    <span id="current-town" class="results">Nairobi</span>
+                </div>
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">Time Zone</h4>
+                    <span id="current-zone" class="results">+03:00</span>
+                </div>
+                <div class="info-block block-seperator">
+                    <h4 class="muted-title">ISP</h4>
+                    <span id="current-isp" class="results"></span>
+                </div>
+            </div>
+        </div>
+        <div class="map-container" id="map"></div>
+    </div>
+
+    <!-- jquery -->
+    <script src="./index3.js">
+    </script>
+</body>
+</html>  
